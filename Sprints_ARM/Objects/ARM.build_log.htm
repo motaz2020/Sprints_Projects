@@ -1,0 +1,101 @@
+<html>
+<body>
+<pre>
+<h1>µVision Build Log</h1>
+<h2>Tool Versions:</h2>
+IDE-Version: µVision V5.31.0.0
+Copyright (C) 2020 ARM Ltd and ARM Germany GmbH. All rights reserved.
+License Information: íŒ›‘∆ ˆÌÀ„, ˆÂÏ Ú«‘…” ëÏÂ—Àﬁ”Â›€, LIC=----
+ 
+Tool Versions:
+Toolchain:       MDK-Lite  Version: 5.31.0.0
+Toolchain Path:  C:\Keil_v5\ARM\ARMCLANG\Bin
+C Compiler:      ArmClang.exe V6.14
+Assembler:       Armasm.exe V6.14
+Linker/Locator:  ArmLink.exe V6.14
+Library Manager: ArmAr.exe V6.14
+Hex Converter:   FromElf.exe V6.14
+CPU DLL:         SARMCM3.DLL V5.31.0.0
+Dialog DLL:      DCM.DLL V1.17.3.0
+Target DLL:      UL2CM3.DLL V1.163.4.0
+Dialog DLL:      TCM.DLL V1.46.0.0
+ 
+<h2>Project:</h2>
+D:\Embedded\egFwd\Sprints\Sprints_ARM\ARM.uvprojx
+Project File Date:  01/07/2023
+
+<h2>Output:</h2>
+*** Using Compiler 'V6.14', folder: 'C:\Keil_v5\ARM\ARMCLANG\Bin'
+Build target 'Target 1'
+../../git/Egypt_FWD_ARM_Project_LED_Control-main/Egypt_FWD_ARM_Project_LED_Control/APP/Src/main.c(18): warning: In file included from...
+../../git/Egypt_FWD_ARM_Project_LED_Control-main/Egypt_FWD_ARM_Project_LED_Control/APP/Src/../Inc/main.h(21): warning: In file included from...
+../../git/Egypt_FWD_ARM_Project_LED_Control-main/Egypt_FWD_ARM_Project_LED_Control/APP/Inc/../../Services/Inc/simulated_PWM.h(24): warning: In file included from...
+../../git/Egypt_FWD_ARM_Project_LED_Control-main/Egypt_FWD_ARM_Project_LED_Control/Services/Inc/../../MCAL/Inc/systick.h(20): warning: In file included from...
+../../git/Egypt_FWD_ARM_Project_LED_Control-main/Egypt_FWD_ARM_Project_LED_Control/MCAL/Inc/../../LIB/Configuration/Inc/systick_cfg.h(30): warning: no newline at end of file [-Wnewline-eof]
+/*End of File*/
+               ^
+../../git/Egypt_FWD_ARM_Project_LED_Control-main/Egypt_FWD_ARM_Project_LED_Control/APP/Src/main.c(18): warning: In file included from...
+../../git/Egypt_FWD_ARM_Project_LED_Control-main/Egypt_FWD_ARM_Project_LED_Control/APP/Src/../Inc/main.h(24): warning: no newline at end of file [-Wnewline-eof]
+#endif
+      ^
+../../git/Egypt_FWD_ARM_Project_LED_Control-main/Egypt_FWD_ARM_Project_LED_Control/APP/Src/main.c(26): warning: no previous extern declaration for non-static variable 'timeOn' [-Wmissing-variable-declarations]
+int timeOn = 2;
+    ^
+../../git/Egypt_FWD_ARM_Project_LED_Control-main/Egypt_FWD_ARM_Project_LED_Control/APP/Src/main.c(26): note: declare 'static' if the variable is not intended to be used outside of this translation unit
+int timeOn = 2;
+^
+../../git/Egypt_FWD_ARM_Project_LED_Control-main/Egypt_FWD_ARM_Project_LED_Control/APP/Src/main.c(27): warning: no previous extern declaration for non-static variable 'timeOff' [-Wmissing-variable-declarations]
+int timeOff = 2;
+    ^
+../../git/Egypt_FWD_ARM_Project_LED_Control-main/Egypt_FWD_ARM_Project_LED_Control/APP/Src/main.c(27): note: declare 'static' if the variable is not intended to be used outside of this translation unit
+int timeOff = 2;
+^
+../../git/Egypt_FWD_ARM_Project_LED_Control-main/Egypt_FWD_ARM_Project_LED_Control/APP/Src/main.c(65): warning: implicit conversion from 'int' to 'float' may lose precision [-Wimplicit-int-float-conversion]
+                        simulatedPWM_init( timeOn, timeOff );
+                        ~~~~~~~~~~~~~~~~~  ^~~~~~
+../../git/Egypt_FWD_ARM_Project_LED_Control-main/Egypt_FWD_ARM_Project_LED_Control/APP/Src/main.c(65): warning: implicit conversion from 'int' to 'float' may lose precision [-Wimplicit-int-float-conversion]
+                        simulatedPWM_init( timeOn, timeOff );
+                        ~~~~~~~~~~~~~~~~~          ^~~~~~~
+../../git/Egypt_FWD_ARM_Project_LED_Control-main/Egypt_FWD_ARM_Project_LED_Control/APP/Src/main.c(79): warning: implicit conversion from 'int' to 'float' may lose precision [-Wimplicit-int-float-conversion]
+                        simulatedPWM_init( timeOn, timeOff );
+                        ~~~~~~~~~~~~~~~~~  ^~~~~~
+../../git/Egypt_FWD_ARM_Project_LED_Control-main/Egypt_FWD_ARM_Project_LED_Control/APP/Src/main.c(79): warning: implicit conversion from 'int' to 'float' may lose precision [-Wimplicit-int-float-conversion]
+                        simulatedPWM_init( timeOn, timeOff );
+                        ~~~~~~~~~~~~~~~~~          ^~~~~~~
+8 warnings generated.
+compiling main.c...
+linking...
+Program Size: Code=2240 RO-data=676 RW-data=40 ZI-data=640  
+".\Objects\ARM.axf" - 0 Error(s), 8 Warning(s).
+
+<h2>Software Packages used:</h2>
+
+Package Vendor: ARM
+                http://www.keil.com/pack/ARM.CMSIS.5.9.0.pack
+                ARM.CMSIS.5.9.0
+                CMSIS (Common Microcontroller Software Interface Standard)
+   * Component: CORE Version: 5.6.0
+
+Package Vendor: Keil
+                http://www.keil.com/pack/Keil.TM4C_DFP.1.1.0.pack
+                Keil.TM4C_DFP.1.1.0
+                Texas Instruments Tiva C Series Device Support and Examples
+   * Component: Startup Version: 1.0.1
+
+<h2>Collection of Component include folders:</h2>
+  .\RTE\_Target_1
+  C:\Users\motaz\AppData\Local\Arm\Packs\ARM\CMSIS\5.9.0\CMSIS\Core\Include
+  C:\Users\motaz\AppData\Local\Arm\Packs\Keil\TM4C_DFP\1.1.0\Device\Include\TM4C123
+
+<h2>Collection of Component Files used:</h2>
+
+   * Component: ARM::CMSIS:CORE:5.6.0
+
+   * Component: Keil::Device:Startup:1.0.1
+      Include file:  Device\Include\TM4C123\TM4C123.h
+      Source file:   Device\Source\ARM\startup_TM4C123.s
+      Source file:   Device\Source\system_TM4C123.c
+Build Time Elapsed:  00:00:00
+</pre>
+</body>
+</html>
